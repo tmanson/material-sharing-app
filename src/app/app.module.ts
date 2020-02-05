@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { CoreModule } from './core/core.module';
 import { APP_CONFIG, APP_CONSTANTS } from './app.config';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { APP_CONFIG, APP_CONSTANTS } from './app.config';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: APP_CONFIG, useValue: APP_CONSTANTS },
